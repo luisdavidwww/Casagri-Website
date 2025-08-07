@@ -3,13 +3,15 @@ import { NavLink } from 'react-router-dom';
 
 import CasagriNavbar from '../static/CasagriNavbar.svg';
 
+//Estilos
+import './Navbar.css';
 
 
 const Navbar = () => {
 
   return (
     <>
-      <nav>
+      <nav className='navbar-init'>
 
       <a href='/' className='navbar-logo'>
             <img src={ CasagriNavbar } alt="HelpDes" /> 

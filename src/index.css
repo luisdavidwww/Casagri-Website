@@ -1,0 +1,151 @@
+
+
+/*Tamaño de TITULOS*/
+.title-basic-start-Nosotros{
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+}
+
+.title-basic-start-Nosotros.alteraditoN{
+  font-size: 4.3rem;
+  line-height: 4.3rem;
+  font-weight: 600;
+}
+
+.text-basic-Nosotros{
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+
+
+/* iPhone SE (2020 y 2022) */
+@media (max-width: 374px) {
+  /* Estilos para iPhone SE */
+  .title-basic-start-Nosotros{
+    padding-top: 10%;
+    font-size: 1.9rem;
+    line-height: 2rem;
+  }
+  .title-basic-start-Nosotros.alteraditoN{
+    padding-top: 20%;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+  }
+  .text-basic-Nosotros{
+    margin-top: 5%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    line-height: 1.2rem;
+  }
+
+}
+
+/* iPhone 11, 12 Mini, 13 Mini */
+@media  (min-width: 375px) and (max-width: 390px){
+  /* Estilos para iPhone 11, 12 Mini, 13 Mini */
+  .title-basic-start-Nosotros{
+    padding-top: 15%;
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .title-basic-start-Nosotros.alteraditoN{
+    padding-top: 25%;
+    font-size: 3rem;
+    line-height: 3.1rem;
+  }
+  .text-basic-Nosotros{
+    margin-top: 5%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    line-height: 1.2rem;
+  }
+  .containerHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    width: 97%;
+    height: 85%;
+    border-radius: 20px;
+    background-color: var(--background-color-two);
+  }
+}
+
+/* iPhone XR, iPhone 11, iPhone 12, iPhone 13, iPhone 14 */
+@media (min-width: 391px) and (max-width: 420px) {
+  /* Estilos para iPhone XR, 11, 12, 13, 14 */
+  .title-basic-start-Nosotros{
+    padding-top: 20%;
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+  }
+  .title-basic-start-Nosotros.alteraditoN{
+    padding-top: 20%;
+    font-size: 3rem;
+    line-height: 3.1rem;
+  }
+  .text-basic-Nosotros{
+    margin-top: 3%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+  }
+}
+
+
+/* iPhone 14 Pro Max, iPhone 15 Pro Max */
+@media (min-width: 421px) and (max-width: 440px) {
+  /* Estilos para iPhone 14 Pro Max, 15 Pro Max */
+  .title-basic-start-Nosotros{
+    padding-top: 15%;
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+  }
+  .title-basic-start-Nosotros.alteraditoN{
+    padding-top: 30%;
+    font-size: 3.3rem;
+    line-height: 3.4rem;
+  }
+  .text-basic-Nosotros{
+    margin-top: 3%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    line-height: 1.2rem;
+  }
+}
+
+@media  (min-width: 350px) and (max-width: 370px){
+  .title-basic-start-Nosotros{
+    padding-top: 20%;
+    font-size: 1.9rem;
+    line-height: 2rem;
+  }
+  .title-basic-start-Nosotros.alteraditoN{
+    padding-top: 20%;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+  }
+  .text-basic-Nosotros{
+    margin-top: 5%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    line-height: 1.2rem;
+  }
+  .containerHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    width: 97%;
+    height: 83%;
+    border-radius: 20px;
+    background-color: var(--background-color-two);
+  }
+}
