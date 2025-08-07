@@ -1,9 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Home from '../pages/Home';
 
-const AppRouter = () => {
-  return (
-    <div>AppRouter</div>
-  )
+export const AppRouter = () => {
+
+    return (
+        <Router>
+            <div style={{ display: 'block' }}>
+                <Routes>
+                    <Route path="/" element={<Home />}/>
+                </Routes>
+            </div>
+        </Router>
+    );
 }
-
-export default AppRouter
