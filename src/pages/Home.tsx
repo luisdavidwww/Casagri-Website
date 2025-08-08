@@ -1,7 +1,9 @@
-
+import Fondo from '../components/home/Fondo';
 const Home = () => {
   return (
-    <div>Holis soy Luis david</div>
+    <>
+    <Fondo />
+    </>
   )
 }
 

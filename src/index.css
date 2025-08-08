@@ -1,3 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* FONDO COLOR */
+  --background-color-green:      #205A41;
+  --background-color-blue:       #0F4556;
+  --background-color-mintGray:   #E5EEEB;
+  --background-color-lightGray:  #F2F2F2;
+  --background-color-white:      #FFFFFF;
+  /* ELEMENTOS COLOR*/
+  --element-color-lightGreen:    #3DAE2B;
+  --element-color-teal:          #23A9B5;
+  --element-color-mintPastel:    #D9F2DF;
+  --element-color-lightGray:     #CCCCCC;
+  --element-color-beige:         #EAD1A9;
+  --element-color-yellow:        #FFD600;
+  /* TITULOS COLOR */
+  --tilte-color-black:           #383F3B;
+  --title-color-blueDark:        #0F4556;
+  --title-color-greenDark:       #205A41;
+  --title-color-greenLight:      #3DAE2B;
+  --title-color-mintPastel:      #D9F2DF;
+  --title-color-white:           #FFFFFF;
+  /* TEXTO SECUNDARIO COLOR */
+  --text-secondary-greenGray:    #7B847E;
+  --text-secondary-blackish:     #383F3B;
+  --text-secondary-lightGray:    #CCCCCC;
+  --text-secondary-mintGray:     #E5EEEB;
+  --text-secondary-white:        #FFFFFF;
+}
+
+
+
 
 
 /*Tamaño de TITULOS*/

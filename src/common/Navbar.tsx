@@ -1,53 +1,88 @@
-// Navbar.js
+import { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
+//LogoCasagri
 import CasagriNavbar from '../static/CasagriNavbar.svg';
+import Dropdown from './Dropdown/Dropdown';
 
 //Estilos
 import './Navbar.css';
 
-
 const Navbar = () => {
+  const [clickDrop, setClickDrop] = useState<boolean>(false);
+
+  // refs para elementos que queremos controlar (debes asignarlos al JSX)
+  const refOne = useRef<HTMLDivElement>(null);
+
+  // abrir Ventana Desplegable
+  const abrirVentanaDesplegable = () => {
+    setClickDrop(!clickDrop);
+  };
+
+  // Escucha cualquier click en el documento para cerrar la ventana desplegable
+  const handleclickOutside = (e: Event) => {
+    if (refOne.current && !refOne.current.contains(e.target as Node)) {
+      setClickDrop(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleclickOutside, true);
+    return () => {
+      document.removeEventListener('click', handleclickOutside, true);
+    };
+  }, []);
+
 
   return (
     <>
-      <nav className='navbar-init'>
-
-      <a href='/' className='navbar-logo'>
-            <img src={ CasagriNavbar } alt="HelpDes" /> 
-        </a>
-
-        <ul >
+      <nav className='navbar-init' ref={refOne} >
+         <a href='/' className='navbar-logo'>
+            <img src={ CasagriNavbar } alt="Casagri" /> 
+          </a>
+        <ul className='nav-menu' >
+         
           <li className='nav-item'>
             <NavLink
-              to="/"
+              to="#" className='nav-links-two'
             >
-              INICIO
+              Inicio
             </NavLink>
           </li>
           <li className='nav-item'>
             <NavLink
-              to="/Nosotros"
+              to="#" className='nav-links-two'
+              onClick={() => { abrirVentanaDesplegable() }}
               >
-              NOSOTROS
+              Catálogo 
             </NavLink>
           </li>
           <li className='nav-item'>
             <NavLink
-              to='/Clientes'
+              to="#" className='nav-links-two'
             >
-              CLIENTES
+              Nosotros
             </NavLink>
           </li>
           <li className='nav-item'>
             <NavLink
-              to="/Contacto"
+              to="#" className='nav-links-two'
               >
-              CONTACTO
+              Noticias
+            </NavLink>   
+          </li>
+          <li className='nav-item'>
+            <NavLink
+              to="#" className='nav-links-two'
+              >
+              Clientes
             </NavLink>   
           </li>
         </ul>
       </nav>
+      <div >
+        <Dropdown ClickDrop={clickDrop} />
+      </div>
     </>
   );
 }

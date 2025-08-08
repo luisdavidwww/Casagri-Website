@@ -1,0 +1,8 @@
+.fondo{
+background-image: url('/images/Fondo.jpg');
+  background-size: cover;        /* que cubra todo el área */
+  background-position: center;   /* centrada */
+  background-repeat: no-repeat;  /* que no se repita */
+  height: 150vh;
+  z-index: -5;
+}

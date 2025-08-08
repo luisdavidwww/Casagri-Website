@@ -1,17 +1,33 @@
 .navbar-init {
-  height: 90px;
+  height: 50px;
   display: flex;
   position: fixed;
   justify-content: center;
   align-items: center;
-  z-index: 50;
   letter-spacing: 0px;
   margin: auto;
+  margin-top: 20px;
   width: 100%;
   transition: all 0.3s ease-out;
-  z-index: 60;
-  border-bottom: 1.5px solid #0c1a4027;
-  background-color: azure;
+   z-index: 10;
+}
+/* Navbar Menu */
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  height: 50px;
+  width: 1300px;
+  justify-content: center;
+  margin-right: 0rem;
+  border-radius: 5px;
+  /*Efecto GLASS fondo*/
+   background-color: rgba(255, 255, 255, 0.829); /* Fondo blanco translúcido */
+  backdrop-filter: blur(50px); /* Desenfoque del fondo detrás */
+  -webkit-backdrop-filter: blur(50px); /* Soporte Safari */
+   z-index: 10;
 }
 
 /* Logo Navbar */
@@ -20,15 +36,42 @@
   justify-self: start;
   justify-content: center;
   position: absolute;
-  left: 15%;
+  left: 22%;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
-  filter: var(--filter-Logo) ;
-  padding-top: 0rem;
-  width: 40px;
-  height: 40px;
+  margin-top: 0rem;
+  width: 2rem;
+  height: 2rem;
   transition: all 0.1s linear;
-  z-index: 50 !important;
+  z-index: 50;
 }
 
+
+
+
+/* Items Menú */
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Links Opciones */
+.nav-links-two {
+  display: flex;
+  position: relative;
+  color: var(--title-color-black);
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0rem 0.5rem;
+  margin: 0rem 0.7rem;
+  transition: all 0.2s ease-out;
+  margin-bottom: 0;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+.nav-links-two:hover {
+  color: var(--title-color-greenLight);
+  transition: all 0.2s ease-out;
+}
