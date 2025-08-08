@@ -8,6 +8,10 @@ import Dropdown from './Dropdown/Dropdown';
 //Estilos
 import './Navbar.css';
 
+//icons
+import { AiFillCaretDown } from "react-icons/ai";
+
+
 const Navbar = () => {
   const [clickDrop, setClickDrop] = useState<boolean>(false);
 
@@ -54,7 +58,7 @@ const Navbar = () => {
               to="#" className='nav-links-two'
               onClick={() => { abrirVentanaDesplegable() }}
               >
-              Catálogo 
+              Catálogo <AiFillCaretDown style={{fontSize:'0.8rem',paddingLeft:'0.2rem', marginTop:'0.25rem'}}/>
             </NavLink>
           </li>
           <li className='nav-item'>

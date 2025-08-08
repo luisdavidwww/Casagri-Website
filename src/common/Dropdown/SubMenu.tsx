@@ -10,31 +10,31 @@ export const SubMenu = [
   {
     id: 1,
     name: "AGRO",
-    href:"#",
-    img: agro
+    href: "#",
+    img: agro,
   },
   {
     id: 2,
     name: "PECUARIA",
-    href:"#",
-    img: pecuaria
+    href: "#",
+    img: pecuaria,
   },
   {
     id: 3,
     name: "MAQUINARIA",
-    href:"#",
-    img: maquinaria
+    href: "#",
+    img: maquinaria,
   },
-   {
+  {
     id: 4,
     name: "FERRETERIA",
-    href:"#",
-    img: ferreteria
+    href: "#",
+    img: ferreteria,
   },
-   {
+  {
     id: 5,
     name: "SALUD PÚBLICA",
-    href:"#",
-    img: spublica
+    href: "#",
+    img: spublica,
   }
 ];

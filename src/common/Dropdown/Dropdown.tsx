@@ -14,12 +14,13 @@ interface SubMenuItem {
   id: number | string;
   name: string;
   href: string;
-  img: string
+  img: string;
 }
 
 function Dropdown({ ClickDrop }: DropdownProps) {
 
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
+
 
   const handleItemHover = (index: number) => {
     setHoveredItem(index);
@@ -48,7 +49,7 @@ function Dropdown({ ClickDrop }: DropdownProps) {
             >
               <Link
                 to='#'
-                className="content-dropdown-list"
+                className={`content-dropdown-list ${link.name}`}
               >
                 <img src={link.img} alt={link.name} className="imgCategory"/>
                 <h3 className="titleCategory">{link.name}</h3>

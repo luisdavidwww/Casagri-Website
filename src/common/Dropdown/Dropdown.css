@@ -11,9 +11,9 @@
   justify-content: center;
   align-items: center;
 
-  top: 8%;
+  top: 80px;
 
-  height: 300px;
+  height: 250px;
   width: 1300px; /* o lo que necesites */
 
   background-color: #ffffff;
@@ -22,16 +22,15 @@
   transition: 0.5s;
   
   /*Efecto GLASS fondo*/
-  background-color: rgba(255, 255, 255, 0.829); /* Fondo blanco translúcido */
+  background-color: rgba(255, 255, 255, 0.822); /* Fondo blanco translúcido */
   backdrop-filter: blur(50px); /* Desenfoque del fondo detrás */
   -webkit-backdrop-filter: blur(50px); /* Soporte Safari */
-  z-index: 12;
+  z-index: 5;
 }
 
 .dropdown_menu_occho.desactive {
-  position: absolute;
+  position: fixed;
   height: 0 !important;
-
   transition: 0.5s;
   z-index: 5;
 }
@@ -42,19 +41,20 @@
   width: 100%;
   height: 100vh !important;
 
-  background-color: rgba(0, 0, 0, 0.548); /* negro semi-transparente */
+  background-color: #1c2d267f; /* negro semi-transparente */
    backdrop-filter: blur(2px); /* Desenfoque del fondo detrás */
   -webkit-backdrop-filter: blur(2px); /* Soporte Safari */
   
   /* Si quieres un efecto suave al mostrar/ocultar */
   transition: opacity 0.5s ease;
 
-  z-index: 0; /* asegúrate que esté encima del fondo, debajo de contenido */
+  z-index: 4; /* asegúrate que esté encima del fondo, debajo de contenido */
 }
 .backgraundBlack.desactive{
   opacity: 0;
-   height: max-content;
-  background-color: rgba(0, 0, 0, 0.692);
+  height: max-content;
+  z-index: -1; 
+  background-color: #0c7f4d87;
   transition: height 0.5s ease, top 0.5s ease, transform 0.5s ease;
 }
 
@@ -68,9 +68,6 @@
   cursor: pointer;
 }
 
-.dropdown-menu li:hover {
-  background: #5cabff;
-}
 
 .dropdown-menu.clicked {
   display: none;
@@ -117,6 +114,34 @@
   background-color: #678381;
   border-radius: 10px;
 }
+.content-dropdown-list.AGRO:hover {
+  background-color: VAR(--title-color-greenDark) !important;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.content-dropdown-list.PECUARIA:hover {
+  background-color: VAR(--title-color-blueDark) !important;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.content-dropdown-list.MAQUINARIA:hover {
+  background-color: VAR(--element-color-yellow) !important;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.content-dropdown-list.FERRETERIA:hover {
+  background-color: VAR(--element-color-lightGreen) !important;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.content-dropdown-list:hover {
+  background-color: #553082 !important;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+
+
 
 .titleCategory{
   display: flex;

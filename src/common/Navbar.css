@@ -24,7 +24,7 @@
   margin-right: 0rem;
   border-radius: 5px;
   /*Efecto GLASS fondo*/
-   background-color: rgba(255, 255, 255, 0.829); /* Fondo blanco translúcido */
+   background-color: rgba(255, 255, 255, 0.822); /* Fondo blanco translúcido */
   backdrop-filter: blur(50px); /* Desenfoque del fondo detrás */
   -webkit-backdrop-filter: blur(50px); /* Soporte Safari */
    z-index: 10;
